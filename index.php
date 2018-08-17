@@ -5,8 +5,8 @@
     <title>mary</title>
 </head>
 <body>
-<h1>beepboop</h1>
-<p>why wont this work i'm going nuts.</p>
+<h1>Miss Mary Mac</h1>
+<a href="day1.php">day 1 javascript</a>
 
 </body>
 </html>
