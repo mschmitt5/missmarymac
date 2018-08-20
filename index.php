@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Miss Mary Mac</h1>
-<a href="day1.php">day 1 javascript</a>
+
 
 </body>
 </html>

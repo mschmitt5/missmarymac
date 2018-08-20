@@ -10,7 +10,7 @@
 <div class="keys">
     <div data-key="65" class="key">
         <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <span class="sound">warrior cry</span>
     </div>
     <div data-key="83" class="key">
         <kbd>S</kbd>
@@ -46,15 +46,15 @@
     </div>
 </div>
 
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="65" src="sounds/clap.wav"></audio>
+<audio data-key="65" src="xenaSounds/WarriorCry.mp3"></audio>
+<audio data-key="65" src="xenaSounds/ThemeSong.mp3"></audio>
+<audio data-key="65" src="xenaSounds/FunYet.mp3"></audio>
+<audio data-key="65" src="xenaSounds/WontWorkForYou.mp3"></audio>
+<audio data-key="65" src="xenaSounds/Boo.mp3"></audio>
+<audio data-key="65" src="xenaSounds/FightNowTalkLater.mp3"></audio>
+<audio data-key="65" src="xenaSounds/GettingTheGirl.mp3"></audio>
+<audio data-key="65" src="xenaSounds/GoodGuys.mp3"></audio>
+<audio data-key="65" src="xenaSounds/SnowballsChance.mp3"></audio>
 
 </body>
 </html>
