@@ -14,47 +14,53 @@
     </div>
     <div data-key="83" class="key">
         <kbd>S</kbd>
-        <span class="sound">hihat</span>
+        <span class="sound">theme song</span>
     </div>
     <div data-key="68" class="key">
         <kbd>D</kbd>
-        <span class="sound">kick</span>
+        <span class="sound">fun yet?</span>
     </div>
     <div data-key="70" class="key">
         <kbd>F</kbd>
-        <span class="sound">openhat</span>
+        <span class="sound">I won't work for you</span>
     </div>
     <div data-key="71" class="key">
         <kbd>G</kbd>
-        <span class="sound">boom</span>
+        <span class="sound">boo</span>
     </div>
     <div data-key="72" class="key">
         <kbd>H</kbd>
-        <span class="sound">ride</span>
+        <span class="sound">fight now, talk later</span>
     </div>
     <div data-key="74" class="key">
         <kbd>J</kbd>
-        <span class="sound">snare</span>
+        <span class="sound">getting the girl</span>
     </div>
     <div data-key="75" class="key">
         <kbd>K</kbd>
-        <span class="sound">tom</span>
+        <span class="sound">good guys</span>
     </div>
     <div data-key="76" class="key">
         <kbd>L</kbd>
-        <span class="sound">tink</span>
+        <span class="sound">snowball's chance</span>
     </div>
 </div>
 
-<audio data-key="65" src="xenaSounds/WarriorCry.mp3"></audio>
-<audio data-key="65" src="xenaSounds/ThemeSong.mp3"></audio>
-<audio data-key="65" src="xenaSounds/FunYet.mp3"></audio>
-<audio data-key="65" src="xenaSounds/WontWorkForYou.mp3"></audio>
-<audio data-key="65" src="xenaSounds/Boo.mp3"></audio>
-<audio data-key="65" src="xenaSounds/FightNowTalkLater.mp3"></audio>
-<audio data-key="65" src="xenaSounds/GettingTheGirl.mp3"></audio>
-<audio data-key="65" src="xenaSounds/GoodGuys.mp3"></audio>
-<audio data-key="65" src="xenaSounds/SnowballsChance.mp3"></audio>
+<audio data-key="65" src="xena/WarriorCry.mp3"></audio>
+<audio data-key="65" src="xena/ThemeSong.mp3"></audio>
+<audio data-key="65" src="xena/FunYet.mp3"></audio>
+<audio data-key="65" src="xena/WontWorkForYou.mp3"></audio>
+<audio data-key="65" src="xena/Boo.mp3"></audio>
+<audio data-key="65" src="xena/FightNowTalkLater.mp3"></audio>
+<audio data-key="65" src="xena/GettingTheGirl.mp3"></audio>
+<audio data-key="65" src="xena/GoodGuys.mp3"></audio>
+<audio data-key="65" src="xena/SnowballsChance.mp3"></audio>
+
+<script>
+    window.addEventListener('keydown', function (e) {
+        console.log(e.keyCode);
+    });
+</script>
 
 </body>
 </html>
