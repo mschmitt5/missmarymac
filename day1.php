@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>javascript day 1</title>
+    <title>Xena Keyboard</title>
 </head>
 <body>
-<h1>Miss Mary Mac's Drum Kit</h1>
+<br>
+<br>
+<br>
+
+<h1>Xena Keyboard!</h1>
 <div class="keys">
     <div data-key="65" class="key">
         <kbd>A</kbd>
@@ -47,19 +51,37 @@
 </div>
 
 <audio data-key="65" src="xena/WarriorCry.mp3"></audio>
-<audio data-key="65" src="xena/ThemeSong.mp3"></audio>
-<audio data-key="65" src="xena/FunYet.mp3"></audio>
-<audio data-key="65" src="xena/WontWorkForYou.mp3"></audio>
-<audio data-key="65" src="xena/Boo.mp3"></audio>
-<audio data-key="65" src="xena/FightNowTalkLater.mp3"></audio>
-<audio data-key="65" src="xena/GettingTheGirl.mp3"></audio>
-<audio data-key="65" src="xena/GoodGuys.mp3"></audio>
-<audio data-key="65" src="xena/SnowballsChance.mp3"></audio>
+<audio data-key="83" src="xena/ThemeSong.mp3"></audio>
+<audio data-key="68" src="xena/FunYet.mp3"></audio>
+<audio data-key="70" src="xena/WontWorkForYou.mp3"></audio>
+<audio data-key="71" src="xena/Boo.mp3"></audio>
+<audio data-key="72" src="xena/FightNowTalkLater.mp3"></audio>
+<audio data-key="74" src="xena/GettingTheGirl.mp3"></audio>
+<audio data-key="75" src="xena/GoodGuys.mp3"></audio>
+<audio data-key="76" src="xena/SnowballsChance.mp3"></audio>
 
 <script>
-    window.addEventListener('keydown', function (e) {
-        console.log(e.keyCode);
-    });
+
+    
+    function playSound(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+            if(!audio) return;
+            audio.currentTime = 0;
+            audio.play();
+            key.classList.add('playing');
+        }
+
+    function removeTransition(e) {
+        if(e.propertyName !== 'transform') return;
+        this.classList.remove('playing');
+    }
+
+    const keys = document.querySelectorAll('.key');
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+    window.addEventListener('keydown', playSound);
+
 </script>
 
 </body>
